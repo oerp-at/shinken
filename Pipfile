@@ -9,7 +9,7 @@ yapf = "==0.29.0"
 
 [packages]
 CherryPy = ">=3,<9"
-pycurl = "==7.43.0.5" 
+pycurl = "*" 
 importlib = "*" 
 pbr = "*" 
 html = "*" 

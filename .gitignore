@@ -52,3 +52,5 @@ test/tmp/.cov*
 # Pbr
 pbr-*.egg/
 
+# ignore running 
+run/
