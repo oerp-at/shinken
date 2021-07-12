@@ -1,0 +1,18 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pylint = "==1.8.4"
+yapf = "==0.29.0"
+
+[packages]
+CherryPy = ">=3,<9"
+pycurl = "*" 
+importlib = "*" 
+pbr = "*" 
+html = "*" 
+
+[requires]
+python_version = "2.7"

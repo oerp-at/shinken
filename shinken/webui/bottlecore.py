@@ -2260,9 +2260,8 @@ def run(app=None, server='wsgiref', host='127.0.0.1', port=8080,
             # Shinken
             res = server.run(app)
     except KeyboardInterrupt:
-        pass
-    if not server.quiet and not os.environ.get('BOTTLE_CHILD'):
         print "Shutting down..."
+
     # Shinken
     return res
 

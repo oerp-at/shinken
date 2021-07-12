@@ -28,7 +28,7 @@ echo "$DIR"
 # Prepare the launch by cleaning var/log directories
 . $DIR/preparedev
 
-cd "$DIR/.."
+cd "$DIR"
 
 export LANG=us_US.UTF-8
 # Protect against proxy variable for dev

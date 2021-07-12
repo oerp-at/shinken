@@ -23,7 +23,7 @@
 
 
 DIR="$(cd $(dirname "$0"); pwd)"
-BIN="$DIR"/../shinken/bin
+BIN="$DIR"
 ETC="$DIR"/../etc
 
 echo "Launching Poller (which launches checks)"

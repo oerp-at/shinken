@@ -11,6 +11,7 @@ INSTALLED_FILES
 modules/*
 .ropeproject
 .coverage
+Pipfile.lock
 
 # Logs and databases #
 ######################

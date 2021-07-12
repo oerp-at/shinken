@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"python.analysis.watchSearchPaths": true,
+		// use this so the autocompleate/goto definition will work with python extension		
+		//"python.linting.pylintPath": "optional: path to python use if you have environment path",
+		"python.linting.enabled": true,	
+		//load the pylint_odoo
+		"python.linting.pylintEnabled": true,
+		"python.linting.pylintArgs": [
+		],
+		"python.formatting.provider": "yapf",
+		//"python.formatting.yapfPath": "optional: path to python use if you have environment path",
+		// "python.linting.pycodestylePath": "optional: path to python use if you have environment path",
+		"python.linting.pycodestyleEnabled": false,
+		// The following will hide the compiled file in the editor/ add other file to hide them from editor
+		"files.exclude": {
+			"**/*.pyc": {"when": "$(basename).py"}, 
+			"**/__pycache__": true
+		}
+	}
+}

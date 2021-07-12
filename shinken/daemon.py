@@ -999,10 +999,10 @@ class Daemon(object):
         # print "Create relative paths with", reference_path
         properties = self.__class__.properties
         for prop, entry in properties.items():
-            if isinstance(entry, ConfigPathProp):
+            if isinstance(entry, (ConfigPathProp,PathProp)):
                 path = getattr(self, prop)
                 if not os.path.isabs(path):
-                    new_path = os.path.join(reference_path, path)
+                    new_path = os.path.abspath(os.path.join(reference_path, path))
                     # print "DBG: changing", entry, "from", path, "to", new_path
                     path = new_path
                 setattr(self, prop, path)

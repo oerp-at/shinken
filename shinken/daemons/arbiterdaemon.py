@@ -294,6 +294,16 @@ class Arbiter(Daemon):
         self.conf.create_objects_for_type(raw_objects, 'arbiter')
         self.conf.create_objects_for_type(raw_objects, 'module')
 
+        # relative to absolute directories
+        for conf_dir in ("workdir",
+                        "modules_dir",
+                        "local_log",
+                        "lock_file"):
+            conf_dir_path = getattr(self.conf, conf_dir, '')
+            if conf_dir_path and not os.path.isabs(conf_dir_path):
+                conf_dir_path = os.path.abspath(os.path.join(self.conf.config_base_dir, conf_dir_path))
+                setattr(self.conf, conf_dir, conf_dir_path)
+
         self.conf.early_arbiter_linking()
 
         # Search which Arbiterlink I am
