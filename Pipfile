@@ -14,6 +14,11 @@ importlib = "*"
 pbr = "*" 
 html = "*" 
 requests = "*"
+bottle = "==0.12.8"
+pymongo = ">=3.0.3"
+arrow = "*"
+passlib = "*"
+ldap3 = "*"
 
 [requires]
 python_version = "2.7"
