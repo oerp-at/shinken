@@ -16,7 +16,7 @@ html = "*"
 requests = "*"
 bottle = "==0.12.8"
 pymongo = ">=3.0.3"
-arrow = "*"
+arrow = "==0.17.0"
 passlib = "*"
 ldap3 = "*"
 
