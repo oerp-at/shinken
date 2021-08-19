@@ -19,6 +19,7 @@ pymongo = ">=3.0.3"
 arrow = "==0.17.0"
 passlib = "*"
 ldap3 = "*"
+python-ldap = "*"
 
 [requires]
 python_version = "2.7"
